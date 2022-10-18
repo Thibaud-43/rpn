@@ -26,3 +26,17 @@ test("That's a test!", () => {
 test("That's a test!", () => {
   expect(evaluate([1, 1, "+", 1, "+"])).toEqual(3);
 });
+
+test("That's a test!", () => {
+  expect(evaluate([1, "+"])).toEqual("Two operands need to evaluate operation");
+});
+test("That's a test!", () => {
+  expect(evaluate([1, 1, "+", "+"])).toEqual("Two operands need to evaluate operation");
+});
+test("That's a test!", () => {
+  expect(evaluate([1, "+", 1, "+"])).toEqual("Two operands need to evaluate operation");
+});
+
+test("That's a test!", () => {
+  expect(evaluate([1, 1, "+", "+", 1, "+"])).toEqual("Two operands need to evaluate operation");
+});
